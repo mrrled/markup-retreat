@@ -1,1 +1,25 @@
-/* Пиши стили тут */
+.stars {
+    display: flex;
+    gap: 12px;
+    font-size: 70px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.star {
+    color: #ddd;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #ffd700;
+}
+
+.stars input:checked ~ label {
+    color: #ffd700;
+}
+
+.stars label:hover ~ label {
+    transform: scale(1);
+}
